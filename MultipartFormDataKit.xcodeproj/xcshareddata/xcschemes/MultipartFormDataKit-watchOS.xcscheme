@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "9999"
+   LastUpgradeVersion = "0900"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "MultipartFormData::MultipartFormData"
-               BuildableName = "MultipartFormData.framework"
-               BlueprintName = "MultipartFormData-macOS"
-               ReferencedContainer = "container:MultipartFormData.xcodeproj">
+               BlueprintIdentifier = "621346AA1FA60CCB00DD098E"
+               BuildableName = "MultipartFormDataKit_watchOS.framework"
+               BlueprintName = "MultipartFormDataKit-watchOS"
+               ReferencedContainer = "container:MultipartFormDataKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,16 +29,6 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "MultipartFormData::MultipartFormDataTests"
-               BuildableName = "MultipartFormDataTests.xctest"
-               BlueprintName = "MultipartFormDataTests"
-               ReferencedContainer = "container:MultipartFormData.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <AdditionalOptions>
       </AdditionalOptions>
@@ -57,10 +47,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "MultipartFormData::MultipartFormData"
-            BuildableName = "MultipartFormData.framework"
-            BlueprintName = "MultipartFormData-macOS"
-            ReferencedContainer = "container:MultipartFormData.xcodeproj">
+            BlueprintIdentifier = "621346AA1FA60CCB00DD098E"
+            BuildableName = "MultipartFormDataKit_watchOS.framework"
+            BlueprintName = "MultipartFormDataKit-watchOS"
+            ReferencedContainer = "container:MultipartFormDataKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -72,6 +62,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "621346AA1FA60CCB00DD098E"
+            BuildableName = "MultipartFormDataKit_watchOS.framework"
+            BlueprintName = "MultipartFormDataKit-watchOS"
+            ReferencedContainer = "container:MultipartFormDataKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

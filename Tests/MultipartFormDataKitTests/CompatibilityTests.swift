@@ -1,6 +1,6 @@
 import Foundation
 import XCTest
-@testable import MultipartFormData
+@testable import MultipartFormDataKit
 
 
 class CompatibilityTests: XCTestCase {
