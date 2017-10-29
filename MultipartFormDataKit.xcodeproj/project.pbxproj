@@ -21,6 +21,42 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		621346C51FA61B5800DD098E /* BoundaryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* BoundaryGenerator.swift */; };
+		621346C61FA61B5800DD098E /* CRLF.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* CRLF.swift */; };
+		621346C71FA61B5800DD098E /* ContentDisposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* ContentDisposition.swift */; };
+		621346C81FA61B5800DD098E /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ContentType.swift */; };
+		621346C91FA61B5800DD098E /* Dash.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Dash.swift */; };
+		621346CA1FA61B5800DD098E /* Filename.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Filename.swift */; };
+		621346CB1FA61B5800DD098E /* MIMEType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* MIMEType.swift */; };
+		621346CC1FA61B5800DD098E /* MultipartFormData+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* MultipartFormData+Builder.swift */; };
+		621346CD1FA61B5800DD098E /* MultipartFormData+Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* MultipartFormData+Part.swift */; };
+		621346CE1FA61B5800DD098E /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* MultipartFormData.swift */; };
+		621346CF1FA61B5800DD098E /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Name.swift */; };
+		621346D01FA61B5800DD098E /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* ValidationResult.swift */; };
+		621346D11FA61B5D00DD098E /* BoundaryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* BoundaryGenerator.swift */; };
+		621346D21FA61B5D00DD098E /* CRLF.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* CRLF.swift */; };
+		621346D31FA61B5D00DD098E /* ContentDisposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* ContentDisposition.swift */; };
+		621346D41FA61B5D00DD098E /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ContentType.swift */; };
+		621346D51FA61B5D00DD098E /* Dash.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Dash.swift */; };
+		621346D61FA61B5D00DD098E /* Filename.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Filename.swift */; };
+		621346D71FA61B5D00DD098E /* MIMEType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* MIMEType.swift */; };
+		621346D81FA61B5D00DD098E /* MultipartFormData+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* MultipartFormData+Builder.swift */; };
+		621346D91FA61B5D00DD098E /* MultipartFormData+Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* MultipartFormData+Part.swift */; };
+		621346DA1FA61B5D00DD098E /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* MultipartFormData.swift */; };
+		621346DB1FA61B5D00DD098E /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Name.swift */; };
+		621346DC1FA61B5D00DD098E /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* ValidationResult.swift */; };
+		621346DD1FA61B6000DD098E /* BoundaryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* BoundaryGenerator.swift */; };
+		621346DE1FA61B6000DD098E /* CRLF.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* CRLF.swift */; };
+		621346DF1FA61B6000DD098E /* ContentDisposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* ContentDisposition.swift */; };
+		621346E01FA61B6000DD098E /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ContentType.swift */; };
+		621346E11FA61B6000DD098E /* Dash.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Dash.swift */; };
+		621346E21FA61B6000DD098E /* Filename.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Filename.swift */; };
+		621346E31FA61B6000DD098E /* MIMEType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* MIMEType.swift */; };
+		621346E41FA61B6000DD098E /* MultipartFormData+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* MultipartFormData+Builder.swift */; };
+		621346E51FA61B6000DD098E /* MultipartFormData+Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* MultipartFormData+Part.swift */; };
+		621346E61FA61B6000DD098E /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* MultipartFormData.swift */; };
+		621346E71FA61B6000DD098E /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Name.swift */; };
+		621346E81FA61B6000DD098E /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* ValidationResult.swift */; };
 		OBJ_39 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_45 /* CompatibilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* CompatibilityTests.swift */; };
 		OBJ_46 /* ContentDispositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* ContentDispositionTests.swift */; };
@@ -406,6 +442,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				621346C51FA61B5800DD098E /* BoundaryGenerator.swift in Sources */,
+				621346C61FA61B5800DD098E /* CRLF.swift in Sources */,
+				621346C71FA61B5800DD098E /* ContentDisposition.swift in Sources */,
+				621346C81FA61B5800DD098E /* ContentType.swift in Sources */,
+				621346C91FA61B5800DD098E /* Dash.swift in Sources */,
+				621346CA1FA61B5800DD098E /* Filename.swift in Sources */,
+				621346CB1FA61B5800DD098E /* MIMEType.swift in Sources */,
+				621346CC1FA61B5800DD098E /* MultipartFormData+Builder.swift in Sources */,
+				621346CD1FA61B5800DD098E /* MultipartFormData+Part.swift in Sources */,
+				621346CE1FA61B5800DD098E /* MultipartFormData.swift in Sources */,
+				621346CF1FA61B5800DD098E /* Name.swift in Sources */,
+				621346D01FA61B5800DD098E /* ValidationResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +461,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				621346D11FA61B5D00DD098E /* BoundaryGenerator.swift in Sources */,
+				621346D21FA61B5D00DD098E /* CRLF.swift in Sources */,
+				621346D31FA61B5D00DD098E /* ContentDisposition.swift in Sources */,
+				621346D41FA61B5D00DD098E /* ContentType.swift in Sources */,
+				621346D51FA61B5D00DD098E /* Dash.swift in Sources */,
+				621346D61FA61B5D00DD098E /* Filename.swift in Sources */,
+				621346D71FA61B5D00DD098E /* MIMEType.swift in Sources */,
+				621346D81FA61B5D00DD098E /* MultipartFormData+Builder.swift in Sources */,
+				621346D91FA61B5D00DD098E /* MultipartFormData+Part.swift in Sources */,
+				621346DA1FA61B5D00DD098E /* MultipartFormData.swift in Sources */,
+				621346DB1FA61B5D00DD098E /* Name.swift in Sources */,
+				621346DC1FA61B5D00DD098E /* ValidationResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +480,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				621346DD1FA61B6000DD098E /* BoundaryGenerator.swift in Sources */,
+				621346DE1FA61B6000DD098E /* CRLF.swift in Sources */,
+				621346DF1FA61B6000DD098E /* ContentDisposition.swift in Sources */,
+				621346E01FA61B6000DD098E /* ContentType.swift in Sources */,
+				621346E11FA61B6000DD098E /* Dash.swift in Sources */,
+				621346E21FA61B6000DD098E /* Filename.swift in Sources */,
+				621346E31FA61B6000DD098E /* MIMEType.swift in Sources */,
+				621346E41FA61B6000DD098E /* MultipartFormData+Builder.swift in Sources */,
+				621346E51FA61B6000DD098E /* MultipartFormData+Part.swift in Sources */,
+				621346E61FA61B6000DD098E /* MultipartFormData.swift in Sources */,
+				621346E71FA61B6000DD098E /* Name.swift in Sources */,
+				621346E81FA61B6000DD098E /* ValidationResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
