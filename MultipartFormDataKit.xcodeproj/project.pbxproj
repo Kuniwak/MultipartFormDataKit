@@ -49,22 +49,22 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = MultipartFormDataKit::MultipartFormDataKit;
+			remoteGlobalIDString = "MultipartFormDataKit::MultipartFormDataKit";
 			remoteInfo = MultipartFormDataKit;
 		};
 		621346981FA60B9500DD098E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = MultipartFormDataKit::MultipartFormDataKitTests;
+			remoteGlobalIDString = "MultipartFormDataKit::MultipartFormDataKitTests";
 			remoteInfo = MultipartFormDataKitTests;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6213469E1FA60C4500DD098E /* MultipartFormDataKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultipartFormDataKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		621346AB1FA60CCB00DD098E /* MultipartFormDataKit_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultipartFormDataKit_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		621346B81FA60D0800DD098E /* MultipartFormDataKit_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultipartFormDataKit_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6213469E1FA60C4500DD098E /* MultipartFormDataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultipartFormDataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		621346AB1FA60CCB00DD098E /* MultipartFormDataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultipartFormDataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		621346B81FA60D0800DD098E /* MultipartFormDataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultipartFormDataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"MultipartFormDataKit::MultipartFormDataKit::Product" /* MultipartFormDataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MultipartFormDataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"MultipartFormDataKit::MultipartFormDataKitTests::Product" /* MultipartFormDataKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = MultipartFormDataKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* CRLF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRLF.swift; sourceTree = "<group>"; };
@@ -158,14 +158,14 @@
 			children = (
 				"MultipartFormDataKit::MultipartFormDataKitTests::Product" /* MultipartFormDataKitTests.xctest */,
 				"MultipartFormDataKit::MultipartFormDataKit::Product" /* MultipartFormDataKit.framework */,
-				6213469E1FA60C4500DD098E /* MultipartFormDataKit_iOS.framework */,
-				621346AB1FA60CCB00DD098E /* MultipartFormDataKit_watchOS.framework */,
-				621346B81FA60D0800DD098E /* MultipartFormDataKit_tvOS.framework */,
+				6213469E1FA60C4500DD098E /* MultipartFormDataKit.framework */,
+				621346AB1FA60CCB00DD098E /* MultipartFormDataKit.framework */,
+				621346B81FA60D0800DD098E /* MultipartFormDataKit.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -174,7 +174,6 @@
 				OBJ_30 /* Assets */,
 				OBJ_31 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -247,7 +246,7 @@
 			);
 			name = "MultipartFormDataKit-iOS";
 			productName = MultipartFormDataKit;
-			productReference = 6213469E1FA60C4500DD098E /* MultipartFormDataKit_iOS.framework */;
+			productReference = 6213469E1FA60C4500DD098E /* MultipartFormDataKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		621346AA1FA60CCB00DD098E /* MultipartFormDataKit-watchOS */ = {
@@ -265,7 +264,7 @@
 			);
 			name = "MultipartFormDataKit-watchOS";
 			productName = MultipartFormDataKit;
-			productReference = 621346AB1FA60CCB00DD098E /* MultipartFormDataKit_watchOS.framework */;
+			productReference = 621346AB1FA60CCB00DD098E /* MultipartFormDataKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		621346B71FA60D0800DD098E /* MultipartFormDataKit-tvOS */ = {
@@ -283,7 +282,7 @@
 			);
 			name = "MultipartFormDataKit-tvOS";
 			productName = MultipartFormDataKit;
-			productReference = 621346B81FA60D0800DD098E /* MultipartFormDataKit_tvOS.framework */;
+			productReference = 621346B81FA60D0800DD098E /* MultipartFormDataKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		"MultipartFormDataKit::MultipartFormDataKit" /* MultipartFormDataKit-macOS */ = {
@@ -362,7 +361,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_31 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -537,7 +536,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuniwak.MultipartFormDataKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = MultipartFormDataKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -600,7 +599,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuniwak.MultipartFormDataKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = MultipartFormDataKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -667,7 +666,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuniwak.MultipartFormDataKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = MultipartFormDataKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -731,7 +730,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuniwak.MultipartFormDataKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = MultipartFormDataKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -798,7 +797,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuniwak.MultipartFormDataKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = MultipartFormDataKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -861,7 +860,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuniwak.MultipartFormDataKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = MultipartFormDataKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -984,7 +983,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = MultipartFormDataKit;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = MultipartFormDataKit;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGET_NAME = MultipartFormDataKit;
@@ -1006,7 +1005,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = MultipartFormDataKit;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = MultipartFormDataKit;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGET_NAME = MultipartFormDataKit;

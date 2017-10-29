@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "621346AA1FA60CCB00DD098E"
-               BuildableName = "MultipartFormDataKit_watchOS.framework"
+               BuildableName = "MultipartFormDataKit.framework"
                BlueprintName = "MultipartFormDataKit-watchOS"
                ReferencedContainer = "container:MultipartFormDataKit.xcodeproj">
             </BuildableReference>
@@ -48,7 +48,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "621346AA1FA60CCB00DD098E"
-            BuildableName = "MultipartFormDataKit_watchOS.framework"
+            BuildableName = "MultipartFormDataKit.framework"
             BlueprintName = "MultipartFormDataKit-watchOS"
             ReferencedContainer = "container:MultipartFormDataKit.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "621346AA1FA60CCB00DD098E"
-            BuildableName = "MultipartFormDataKit_watchOS.framework"
+            BuildableName = "MultipartFormDataKit.framework"
             BlueprintName = "MultipartFormDataKit-watchOS"
             ReferencedContainer = "container:MultipartFormDataKit.xcodeproj">
          </BuildableReference>
