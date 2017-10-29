@@ -1,5 +1,5 @@
-MultipartFormData for Swift
-===========================
+MultipartFormDataKit
+====================
 
 ![Swift 4 compatible](https://img.shields.io/badge/Swift%20version-4-green.svg)
 ![Swift Package Manager and Carthage and CocoaPods compatible](https://img.shields.io/badge/SPM%20%7C%20Carthage%20%7C%20CocoaPods-compatible-green.svg)
@@ -7,7 +7,7 @@ MultipartFormData for Swift
 [![Build Status](https://www.bitrise.io/app/8c05b2758bfbf0d8/status.svg?token=vqY7qlmU6qeCPZ17EX7vRA&branch=master)](https://www.bitrise.io/app/8c05b2758bfbf0d8)
 
 
-MultipartFormData for Swift.
+`multipart/form-data` for Swift.
 
 
 Basic Usage
