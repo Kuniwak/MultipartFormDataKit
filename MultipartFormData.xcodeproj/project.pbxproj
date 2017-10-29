@@ -38,6 +38,42 @@
 		2475EDF70A4FE58583DDD6B7 /* FilenameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E0CB6E13CDE491E6777F /* FilenameTests.swift */; };
 		2475EE512EA38B1FF3C31C56 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E7966BB1F03216D254FB /* ContentType.swift */; };
 		2475EE92C74A97CAB4C14121 /* MultipartFormData+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E5EC12E2409115CD01E9 /* MultipartFormData+Builder.swift */; };
+		621346721FA5EF5800DD098E /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* MultipartFormData.swift */; };
+		621346731FA5EF5800DD098E /* Filename.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475EE4FF72DC0E3F21392BB /* Filename.swift */; };
+		621346741FA5EF5800DD098E /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E8AA054C727A29EC7681 /* ValidationResult.swift */; };
+		621346751FA5EF5800DD098E /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E5AFA7B3F8B6E8EC728B /* Name.swift */; };
+		621346761FA5EF5800DD098E /* ContentDisposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475ED4161A2BCF026D922F5 /* ContentDisposition.swift */; };
+		621346771FA5EF5800DD098E /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E7966BB1F03216D254FB /* ContentType.swift */; };
+		621346781FA5EF5800DD098E /* MIMEType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E29B2FE43643D1A7E39D /* MIMEType.swift */; };
+		621346791FA5EF5800DD098E /* CRLF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E81411D9D559F7F10630 /* CRLF.swift */; };
+		6213467A1FA5EF5800DD098E /* Dash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E47794278EE806B3956C /* Dash.swift */; };
+		6213467B1FA5EF5800DD098E /* BoundaryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E4B7D2F723F738F2E007 /* BoundaryGenerator.swift */; };
+		6213467C1FA5EF5800DD098E /* MultipartFormData+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E5EC12E2409115CD01E9 /* MultipartFormData+Builder.swift */; };
+		6213467D1FA5EF5800DD098E /* MultipartFormData+Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475EA5AF67DBA364CF5E4B2 /* MultipartFormData+Part.swift */; };
+		6213467E1FA5EF5E00DD098E /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* MultipartFormData.swift */; };
+		6213467F1FA5EF5E00DD098E /* Filename.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475EE4FF72DC0E3F21392BB /* Filename.swift */; };
+		621346801FA5EF5E00DD098E /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E8AA054C727A29EC7681 /* ValidationResult.swift */; };
+		621346811FA5EF5E00DD098E /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E5AFA7B3F8B6E8EC728B /* Name.swift */; };
+		621346821FA5EF5E00DD098E /* ContentDisposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475ED4161A2BCF026D922F5 /* ContentDisposition.swift */; };
+		621346831FA5EF5E00DD098E /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E7966BB1F03216D254FB /* ContentType.swift */; };
+		621346841FA5EF5E00DD098E /* MIMEType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E29B2FE43643D1A7E39D /* MIMEType.swift */; };
+		621346851FA5EF5E00DD098E /* CRLF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E81411D9D559F7F10630 /* CRLF.swift */; };
+		621346861FA5EF5E00DD098E /* Dash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E47794278EE806B3956C /* Dash.swift */; };
+		621346871FA5EF5E00DD098E /* BoundaryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E4B7D2F723F738F2E007 /* BoundaryGenerator.swift */; };
+		621346881FA5EF5E00DD098E /* MultipartFormData+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E5EC12E2409115CD01E9 /* MultipartFormData+Builder.swift */; };
+		621346891FA5EF5E00DD098E /* MultipartFormData+Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475EA5AF67DBA364CF5E4B2 /* MultipartFormData+Part.swift */; };
+		6213468A1FA5EF6100DD098E /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* MultipartFormData.swift */; };
+		6213468B1FA5EF6100DD098E /* Filename.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475EE4FF72DC0E3F21392BB /* Filename.swift */; };
+		6213468C1FA5EF6100DD098E /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E8AA054C727A29EC7681 /* ValidationResult.swift */; };
+		6213468D1FA5EF6100DD098E /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E5AFA7B3F8B6E8EC728B /* Name.swift */; };
+		6213468E1FA5EF6100DD098E /* ContentDisposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475ED4161A2BCF026D922F5 /* ContentDisposition.swift */; };
+		6213468F1FA5EF6100DD098E /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E7966BB1F03216D254FB /* ContentType.swift */; };
+		621346901FA5EF6100DD098E /* MIMEType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E29B2FE43643D1A7E39D /* MIMEType.swift */; };
+		621346911FA5EF6100DD098E /* CRLF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E81411D9D559F7F10630 /* CRLF.swift */; };
+		621346921FA5EF6100DD098E /* Dash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E47794278EE806B3956C /* Dash.swift */; };
+		621346931FA5EF6100DD098E /* BoundaryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E4B7D2F723F738F2E007 /* BoundaryGenerator.swift */; };
+		621346941FA5EF6100DD098E /* MultipartFormData+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E5EC12E2409115CD01E9 /* MultipartFormData+Builder.swift */; };
+		621346951FA5EF6100DD098E /* MultipartFormData+Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475EA5AF67DBA364CF5E4B2 /* MultipartFormData+Part.swift */; };
 		62D729D51FA5BDB500CD0897 /* MultipartFormData_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D729C71FA5BDB500CD0897 /* MultipartFormData_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62D729E51FA5BDD900CD0897 /* MultipartFormData_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D729E31FA5BDD900CD0897 /* MultipartFormData_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62D729F21FA5BDF900CD0897 /* MultipartFormData_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D729F01FA5BDF900CD0897 /* MultipartFormData_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -459,6 +495,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				621346721FA5EF5800DD098E /* MultipartFormData.swift in Sources */,
+				621346731FA5EF5800DD098E /* Filename.swift in Sources */,
+				621346741FA5EF5800DD098E /* ValidationResult.swift in Sources */,
+				621346751FA5EF5800DD098E /* Name.swift in Sources */,
+				621346761FA5EF5800DD098E /* ContentDisposition.swift in Sources */,
+				621346771FA5EF5800DD098E /* ContentType.swift in Sources */,
+				621346781FA5EF5800DD098E /* MIMEType.swift in Sources */,
+				621346791FA5EF5800DD098E /* CRLF.swift in Sources */,
+				6213467A1FA5EF5800DD098E /* Dash.swift in Sources */,
+				6213467B1FA5EF5800DD098E /* BoundaryGenerator.swift in Sources */,
+				6213467C1FA5EF5800DD098E /* MultipartFormData+Builder.swift in Sources */,
+				6213467D1FA5EF5800DD098E /* MultipartFormData+Part.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +514,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6213467E1FA5EF5E00DD098E /* MultipartFormData.swift in Sources */,
+				6213467F1FA5EF5E00DD098E /* Filename.swift in Sources */,
+				621346801FA5EF5E00DD098E /* ValidationResult.swift in Sources */,
+				621346811FA5EF5E00DD098E /* Name.swift in Sources */,
+				621346821FA5EF5E00DD098E /* ContentDisposition.swift in Sources */,
+				621346831FA5EF5E00DD098E /* ContentType.swift in Sources */,
+				621346841FA5EF5E00DD098E /* MIMEType.swift in Sources */,
+				621346851FA5EF5E00DD098E /* CRLF.swift in Sources */,
+				621346861FA5EF5E00DD098E /* Dash.swift in Sources */,
+				621346871FA5EF5E00DD098E /* BoundaryGenerator.swift in Sources */,
+				621346881FA5EF5E00DD098E /* MultipartFormData+Builder.swift in Sources */,
+				621346891FA5EF5E00DD098E /* MultipartFormData+Part.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +533,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6213468A1FA5EF6100DD098E /* MultipartFormData.swift in Sources */,
+				6213468B1FA5EF6100DD098E /* Filename.swift in Sources */,
+				6213468C1FA5EF6100DD098E /* ValidationResult.swift in Sources */,
+				6213468D1FA5EF6100DD098E /* Name.swift in Sources */,
+				6213468E1FA5EF6100DD098E /* ContentDisposition.swift in Sources */,
+				6213468F1FA5EF6100DD098E /* ContentType.swift in Sources */,
+				621346901FA5EF6100DD098E /* MIMEType.swift in Sources */,
+				621346911FA5EF6100DD098E /* CRLF.swift in Sources */,
+				621346921FA5EF6100DD098E /* Dash.swift in Sources */,
+				621346931FA5EF6100DD098E /* BoundaryGenerator.swift in Sources */,
+				621346941FA5EF6100DD098E /* MultipartFormData+Builder.swift in Sources */,
+				621346951FA5EF6100DD098E /* MultipartFormData+Part.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +664,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -655,6 +728,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -722,6 +796,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -786,6 +861,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
@@ -853,6 +929,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -916,6 +993,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 11.0;
@@ -994,7 +1072,7 @@
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USE_HEADERMAP = NO;
@@ -1018,6 +1096,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_VERSION = 4.0;
 				TARGET_NAME = MultipartFormData;
 			};
@@ -1040,6 +1119,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_VERSION = 4.0;
 				TARGET_NAME = MultipartFormData;
 			};
@@ -1058,7 +1138,7 @@
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				USE_HEADERMAP = NO;
