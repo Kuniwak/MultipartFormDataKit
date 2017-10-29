@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "62D729ED1FA5BDF800CD0897"
-               BuildableName = "MultipartFormData_tvOS.framework"
+               BuildableName = "MultipartFormData.framework"
                BlueprintName = "MultipartFormData-tvOS"
                ReferencedContainer = "container:MultipartFormData.xcodeproj">
             </BuildableReference>
@@ -48,7 +48,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "62D729ED1FA5BDF800CD0897"
-            BuildableName = "MultipartFormData_tvOS.framework"
+            BuildableName = "MultipartFormData.framework"
             BlueprintName = "MultipartFormData-tvOS"
             ReferencedContainer = "container:MultipartFormData.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "62D729ED1FA5BDF800CD0897"
-            BuildableName = "MultipartFormData_tvOS.framework"
+            BuildableName = "MultipartFormData.framework"
             BlueprintName = "MultipartFormData-tvOS"
             ReferencedContainer = "container:MultipartFormData.xcodeproj">
          </BuildableReference>

@@ -74,9 +74,6 @@
 		621346931FA5EF6100DD098E /* BoundaryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E4B7D2F723F738F2E007 /* BoundaryGenerator.swift */; };
 		621346941FA5EF6100DD098E /* MultipartFormData+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E5EC12E2409115CD01E9 /* MultipartFormData+Builder.swift */; };
 		621346951FA5EF6100DD098E /* MultipartFormData+Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475EA5AF67DBA364CF5E4B2 /* MultipartFormData+Part.swift */; };
-		62D729D51FA5BDB500CD0897 /* MultipartFormData_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D729C71FA5BDB500CD0897 /* MultipartFormData_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62D729E51FA5BDD900CD0897 /* MultipartFormData_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D729E31FA5BDD900CD0897 /* MultipartFormData_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62D729F21FA5BDF900CD0897 /* MultipartFormData_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D729F01FA5BDF900CD0897 /* MultipartFormData_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		OBJ_21 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_27 /* MultipartFormDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* MultipartFormDataTests.swift */; };
 		OBJ_29 /* MultipartFormData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "MultipartFormData::MultipartFormData::Product" /* MultipartFormData.framework */; };
@@ -118,17 +115,9 @@
 		2475ED4161A2BCF026D922F5 /* ContentDisposition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentDisposition.swift; sourceTree = "<group>"; };
 		2475EE4FF72DC0E3F21392BB /* Filename.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filename.swift; sourceTree = "<group>"; };
 		2475EF79EA7D4B425B9ED84D /* NameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameTests.swift; sourceTree = "<group>"; };
-		62D729C51FA5BDB500CD0897 /* MultipartFormData_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultipartFormData_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62D729C71FA5BDB500CD0897 /* MultipartFormData_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultipartFormData_iOS.h; sourceTree = "<group>"; };
-		62D729C81FA5BDB500CD0897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62D729D21FA5BDB500CD0897 /* MultipartFormData_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData_iOSTests.swift; sourceTree = "<group>"; };
-		62D729D41FA5BDB500CD0897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62D729E11FA5BDD900CD0897 /* MultipartFormData_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultipartFormData_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62D729E31FA5BDD900CD0897 /* MultipartFormData_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultipartFormData_watchOS.h; sourceTree = "<group>"; };
-		62D729E41FA5BDD900CD0897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62D729EE1FA5BDF800CD0897 /* MultipartFormData_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultipartFormData_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62D729F01FA5BDF900CD0897 /* MultipartFormData_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultipartFormData_tvOS.h; sourceTree = "<group>"; };
-		62D729F11FA5BDF900CD0897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62D729C51FA5BDB500CD0897 /* MultipartFormData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultipartFormData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62D729E11FA5BDD900CD0897 /* MultipartFormData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultipartFormData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62D729EE1FA5BDF800CD0897 /* MultipartFormData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultipartFormData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"MultipartFormData::MultipartFormData::Product" /* MultipartFormData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MultipartFormData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"MultipartFormData::MultipartFormDataTests::Product" /* MultipartFormDataTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = MultipartFormDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* MultipartFormDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormDataTests.swift; sourceTree = "<group>"; };
@@ -176,42 +165,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		62D729C61FA5BDB500CD0897 /* MultipartFormData-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				62D729C71FA5BDB500CD0897 /* MultipartFormData_iOS.h */,
-				62D729C81FA5BDB500CD0897 /* Info.plist */,
-			);
-			path = "MultipartFormData-iOS";
-			sourceTree = "<group>";
-		};
-		62D729D11FA5BDB500CD0897 /* MultipartFormData-iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				62D729D21FA5BDB500CD0897 /* MultipartFormData_iOSTests.swift */,
-				62D729D41FA5BDB500CD0897 /* Info.plist */,
-			);
-			path = "MultipartFormData-iOSTests";
-			sourceTree = "<group>";
-		};
-		62D729E21FA5BDD900CD0897 /* MultipartFormData-watchOS */ = {
-			isa = PBXGroup;
-			children = (
-				62D729E31FA5BDD900CD0897 /* MultipartFormData_watchOS.h */,
-				62D729E41FA5BDD900CD0897 /* Info.plist */,
-			);
-			path = "MultipartFormData-watchOS";
-			sourceTree = "<group>";
-		};
-		62D729EF1FA5BDF900CD0897 /* MultipartFormData-tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				62D729F01FA5BDF900CD0897 /* MultipartFormData_tvOS.h */,
-				62D729F11FA5BDF900CD0897 /* Info.plist */,
-			);
-			path = "MultipartFormData-tvOS";
-			sourceTree = "<group>";
-		};
 		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,9 +193,9 @@
 			children = (
 				"MultipartFormData::MultipartFormDataTests::Product" /* MultipartFormDataTests.xctest */,
 				"MultipartFormData::MultipartFormData::Product" /* MultipartFormData.framework */,
-				62D729C51FA5BDB500CD0897 /* MultipartFormData_iOS.framework */,
-				62D729E11FA5BDD900CD0897 /* MultipartFormData_watchOS.framework */,
-				62D729EE1FA5BDF800CD0897 /* MultipartFormData_tvOS.framework */,
+				62D729C51FA5BDB500CD0897 /* MultipartFormData.framework */,
+				62D729E11FA5BDD900CD0897 /* MultipartFormData.framework */,
+				62D729EE1FA5BDF800CD0897 /* MultipartFormData.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -253,10 +206,6 @@
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_10 /* Tests */,
-				62D729C61FA5BDB500CD0897 /* MultipartFormData-iOS */,
-				62D729D11FA5BDB500CD0897 /* MultipartFormData-iOSTests */,
-				62D729E21FA5BDD900CD0897 /* MultipartFormData-watchOS */,
-				62D729EF1FA5BDF900CD0897 /* MultipartFormData-tvOS */,
 				OBJ_13 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -296,7 +245,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62D729D51FA5BDB500CD0897 /* MultipartFormData_iOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +252,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62D729E51FA5BDD900CD0897 /* MultipartFormData_watchOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +259,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62D729F21FA5BDF900CD0897 /* MultipartFormData_tvOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +280,7 @@
 			);
 			name = "MultipartFormData-iOS";
 			productName = "MultipartFormData-iOS";
-			productReference = 62D729C51FA5BDB500CD0897 /* MultipartFormData_iOS.framework */;
+			productReference = 62D729C51FA5BDB500CD0897 /* MultipartFormData.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		62D729E01FA5BDD900CD0897 /* MultipartFormData-watchOS */ = {
@@ -352,7 +298,7 @@
 			);
 			name = "MultipartFormData-watchOS";
 			productName = "MultipartFormData-watchOS";
-			productReference = 62D729E11FA5BDD900CD0897 /* MultipartFormData_watchOS.framework */;
+			productReference = 62D729E11FA5BDD900CD0897 /* MultipartFormData.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		62D729ED1FA5BDF800CD0897 /* MultipartFormData-tvOS */ = {
@@ -370,7 +316,7 @@
 			);
 			name = "MultipartFormData-tvOS";
 			productName = "MultipartFormData-tvOS";
-			productReference = 62D729EE1FA5BDF800CD0897 /* MultipartFormData_tvOS.framework */;
+			productReference = 62D729EE1FA5BDF800CD0897 /* MultipartFormData.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		"MultipartFormData::MultipartFormData" /* MultipartFormData-macOS */ = {
@@ -655,13 +601,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "MultipartFormData-iOS/Info.plist";
+				INFOPLIST_FILE = MultipartFormData.xcodeproj/MultipartFormData_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kuniwak.MultipartFormData-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = MultipartFormData;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -719,13 +665,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "MultipartFormData-iOS/Info.plist";
+				INFOPLIST_FILE = MultipartFormData.xcodeproj/MultipartFormData_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kuniwak.MultipartFormData-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = MultipartFormData;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -788,12 +734,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "MultipartFormData-watchOS/Info.plist";
+				INFOPLIST_FILE = MultipartFormData.xcodeproj/MultipartFormData_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kuniwak.MultipartFormData-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = MultipartFormData;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
@@ -853,12 +799,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "MultipartFormData-watchOS/Info.plist";
+				INFOPLIST_FILE = MultipartFormData.xcodeproj/MultipartFormData_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kuniwak.MultipartFormData-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = MultipartFormData;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
@@ -921,12 +867,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "MultipartFormData-tvOS/Info.plist";
+				INFOPLIST_FILE = MultipartFormData.xcodeproj/MultipartFormData_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kuniwak.MultipartFormData-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = MultipartFormData;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
@@ -985,12 +931,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "MultipartFormData-tvOS/Info.plist";
+				INFOPLIST_FILE = MultipartFormData.xcodeproj/MultipartFormData_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kuniwak.MultipartFormData-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = MultipartFormData;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
@@ -1088,13 +1034,13 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = MultipartFormData.xcodeproj/MultipartFormData_Info.plist;
+				INFOPLIST_FILE = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = MultipartFormData;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = MultipartFormData;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_VERSION = 4.0;
@@ -1111,13 +1057,13 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = MultipartFormData.xcodeproj/MultipartFormData_Info.plist;
+				INFOPLIST_FILE = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = MultipartFormData;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = MultipartFormData;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_VERSION = 4.0;
