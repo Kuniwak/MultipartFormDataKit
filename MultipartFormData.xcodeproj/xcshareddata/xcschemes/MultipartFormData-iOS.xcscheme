@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "9999"
+   LastUpgradeVersion = "0900"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "MultipartFormData::MultipartFormData"
-               BuildableName = "MultipartFormData.framework"
-               BlueprintName = "MultipartFormData-macOS"
+               BlueprintIdentifier = "62D729C41FA5BDB500CD0897"
+               BuildableName = "MultipartFormData_iOS.framework"
+               BlueprintName = "MultipartFormData-iOS"
                ReferencedContainer = "container:MultipartFormData.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,13 +33,22 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "MultipartFormData::MultipartFormDataTests"
-               BuildableName = "MultipartFormDataTests.xctest"
-               BlueprintName = "MultipartFormDataTests"
+               BlueprintIdentifier = "62D729CC1FA5BDB500CD0897"
+               BuildableName = "MultipartFormData-iOSTests.xctest"
+               BlueprintName = "MultipartFormData-iOSTests"
                ReferencedContainer = "container:MultipartFormData.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "62D729C41FA5BDB500CD0897"
+            BuildableName = "MultipartFormData_iOS.framework"
+            BlueprintName = "MultipartFormData-iOS"
+            ReferencedContainer = "container:MultipartFormData.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -57,9 +66,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "MultipartFormData::MultipartFormData"
-            BuildableName = "MultipartFormData.framework"
-            BlueprintName = "MultipartFormData-macOS"
+            BlueprintIdentifier = "62D729C41FA5BDB500CD0897"
+            BuildableName = "MultipartFormData_iOS.framework"
+            BlueprintName = "MultipartFormData-iOS"
             ReferencedContainer = "container:MultipartFormData.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -72,6 +81,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "62D729C41FA5BDB500CD0897"
+            BuildableName = "MultipartFormData_iOS.framework"
+            BlueprintName = "MultipartFormData-iOS"
+            ReferencedContainer = "container:MultipartFormData.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
