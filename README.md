@@ -1,6 +1,9 @@
 MultipartFormData for Swift
 ===========================
 
+[![Build Status](https://www.bitrise.io/app/aca88b3311ecad73/status.svg?token=sxhksUHtMRmEltNh9tIamw)](https://www.bitrise.io/app/aca88b3311ecad73)
+
+
 MultipartFormData for Swift.
 
 
