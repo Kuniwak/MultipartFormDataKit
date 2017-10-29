@@ -21,6 +21,23 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2475E0D5E2773BA4603E3EC6 /* ContentTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E121FCC1293508346E8F /* ContentTypeTests.swift */; };
+		2475E1A162712F9F649AB0AD /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E8AA054C727A29EC7681 /* ValidationResult.swift */; };
+		2475E2281C2495E07D6D8CA9 /* BoundaryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E4B7D2F723F738F2E007 /* BoundaryGenerator.swift */; };
+		2475E2FF4351A87B272D0F7B /* ContentDispositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E32FCACCA7407F33C0CD /* ContentDispositionTests.swift */; };
+		2475E3509B820ACA79023A1C /* MultipartFormData+Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475EA5AF67DBA364CF5E4B2 /* MultipartFormData+Part.swift */; };
+		2475E4A890F7A4A5639BC643 /* CRLF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E81411D9D559F7F10630 /* CRLF.swift */; };
+		2475E579CBDABF38E0B9D480 /* MIMEType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E29B2FE43643D1A7E39D /* MIMEType.swift */; };
+		2475E5DAEB0C0094029E813D /* ContentDisposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475ED4161A2BCF026D922F5 /* ContentDisposition.swift */; };
+		2475E5F76D34B19B9BC1D2ED /* NameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475EF79EA7D4B425B9ED84D /* NameTests.swift */; };
+		2475E76801BAF80A8500EFC6 /* Dash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E47794278EE806B3956C /* Dash.swift */; };
+		2475E8E2C02D072A637A6591 /* MultipartFormDataBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475EB96AB961A924C28CB1F /* MultipartFormDataBuilderTests.swift */; };
+		2475E98937B5365758B34197 /* CompatibilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E2BEB8A5CCE0A6F29A00 /* CompatibilityTests.swift */; };
+		2475EA665B4BC80AEAA8A1BA /* Filename.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475EE4FF72DC0E3F21392BB /* Filename.swift */; };
+		2475EB84CA24B272BBF444B6 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E5AFA7B3F8B6E8EC728B /* Name.swift */; };
+		2475EDF70A4FE58583DDD6B7 /* FilenameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E0CB6E13CDE491E6777F /* FilenameTests.swift */; };
+		2475EE512EA38B1FF3C31C56 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E7966BB1F03216D254FB /* ContentType.swift */; };
+		2475EE92C74A97CAB4C14121 /* MultipartFormData+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E5EC12E2409115CD01E9 /* MultipartFormData+Builder.swift */; };
 		OBJ_21 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_27 /* MultipartFormDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* MultipartFormDataTests.swift */; };
 		OBJ_29 /* MultipartFormData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "MultipartFormData::MultipartFormData::Product" /* MultipartFormData.framework */; };
@@ -32,19 +49,36 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = "MultipartFormData::MultipartFormData";
+			remoteGlobalIDString = MultipartFormData::MultipartFormData;
 			remoteInfo = MultipartFormData;
 		};
 		62858A5C1FA4EE2E0051CAED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = "MultipartFormData::MultipartFormDataTests";
+			remoteGlobalIDString = MultipartFormData::MultipartFormDataTests;
 			remoteInfo = MultipartFormDataTests;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2475E0CB6E13CDE491E6777F /* FilenameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilenameTests.swift; sourceTree = "<group>"; };
+		2475E121FCC1293508346E8F /* ContentTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentTypeTests.swift; sourceTree = "<group>"; };
+		2475E29B2FE43643D1A7E39D /* MIMEType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIMEType.swift; sourceTree = "<group>"; };
+		2475E2BEB8A5CCE0A6F29A00 /* CompatibilityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompatibilityTests.swift; sourceTree = "<group>"; };
+		2475E32FCACCA7407F33C0CD /* ContentDispositionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentDispositionTests.swift; sourceTree = "<group>"; };
+		2475E47794278EE806B3956C /* Dash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dash.swift; sourceTree = "<group>"; };
+		2475E4B7D2F723F738F2E007 /* BoundaryGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundaryGenerator.swift; sourceTree = "<group>"; };
+		2475E5AFA7B3F8B6E8EC728B /* Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		2475E5EC12E2409115CD01E9 /* MultipartFormData+Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MultipartFormData+Builder.swift"; sourceTree = "<group>"; };
+		2475E7966BB1F03216D254FB /* ContentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
+		2475E81411D9D559F7F10630 /* CRLF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRLF.swift; sourceTree = "<group>"; };
+		2475E8AA054C727A29EC7681 /* ValidationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
+		2475EA5AF67DBA364CF5E4B2 /* MultipartFormData+Part.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MultipartFormData+Part.swift"; sourceTree = "<group>"; };
+		2475EB96AB961A924C28CB1F /* MultipartFormDataBuilderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartFormDataBuilderTests.swift; sourceTree = "<group>"; };
+		2475ED4161A2BCF026D922F5 /* ContentDisposition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentDisposition.swift; sourceTree = "<group>"; };
+		2475EE4FF72DC0E3F21392BB /* Filename.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filename.swift; sourceTree = "<group>"; };
+		2475EF79EA7D4B425B9ED84D /* NameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameTests.swift; sourceTree = "<group>"; };
 		"MultipartFormData::MultipartFormData::Product" /* MultipartFormData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MultipartFormData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"MultipartFormData::MultipartFormDataTests::Product" /* MultipartFormDataTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = MultipartFormDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* MultipartFormDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormDataTests.swift; sourceTree = "<group>"; };
@@ -83,6 +117,12 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_12 /* MultipartFormDataTests.swift */,
+				2475E32FCACCA7407F33C0CD /* ContentDispositionTests.swift */,
+				2475E121FCC1293508346E8F /* ContentTypeTests.swift */,
+				2475E0CB6E13CDE491E6777F /* FilenameTests.swift */,
+				2475EF79EA7D4B425B9ED84D /* NameTests.swift */,
+				2475EB96AB961A924C28CB1F /* MultipartFormDataBuilderTests.swift */,
+				2475E2BEB8A5CCE0A6F29A00 /* CompatibilityTests.swift */,
 			);
 			name = MultipartFormDataTests;
 			path = Tests/MultipartFormDataTests;
@@ -120,6 +160,17 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* MultipartFormData.swift */,
+				2475EE4FF72DC0E3F21392BB /* Filename.swift */,
+				2475E8AA054C727A29EC7681 /* ValidationResult.swift */,
+				2475E5AFA7B3F8B6E8EC728B /* Name.swift */,
+				2475ED4161A2BCF026D922F5 /* ContentDisposition.swift */,
+				2475E7966BB1F03216D254FB /* ContentType.swift */,
+				2475E29B2FE43643D1A7E39D /* MIMEType.swift */,
+				2475E81411D9D559F7F10630 /* CRLF.swift */,
+				2475E47794278EE806B3956C /* Dash.swift */,
+				2475E4B7D2F723F738F2E007 /* BoundaryGenerator.swift */,
+				2475E5EC12E2409115CD01E9 /* MultipartFormData+Builder.swift */,
+				2475EA5AF67DBA364CF5E4B2 /* MultipartFormData+Part.swift */,
 			);
 			name = MultipartFormData;
 			path = Sources/MultipartFormData;
@@ -217,6 +268,12 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_27 /* MultipartFormDataTests.swift in Sources */,
+				2475E2FF4351A87B272D0F7B /* ContentDispositionTests.swift in Sources */,
+				2475E0D5E2773BA4603E3EC6 /* ContentTypeTests.swift in Sources */,
+				2475EDF70A4FE58583DDD6B7 /* FilenameTests.swift in Sources */,
+				2475E5F76D34B19B9BC1D2ED /* NameTests.swift in Sources */,
+				2475E8E2C02D072A637A6591 /* MultipartFormDataBuilderTests.swift in Sources */,
+				2475E98937B5365758B34197 /* CompatibilityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +282,17 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_36 /* MultipartFormData.swift in Sources */,
+				2475E1A162712F9F649AB0AD /* ValidationResult.swift in Sources */,
+				2475EA665B4BC80AEAA8A1BA /* Filename.swift in Sources */,
+				2475EB84CA24B272BBF444B6 /* Name.swift in Sources */,
+				2475E5DAEB0C0094029E813D /* ContentDisposition.swift in Sources */,
+				2475EE512EA38B1FF3C31C56 /* ContentType.swift in Sources */,
+				2475E579CBDABF38E0B9D480 /* MIMEType.swift in Sources */,
+				2475E4A890F7A4A5639BC643 /* CRLF.swift in Sources */,
+				2475E76801BAF80A8500EFC6 /* Dash.swift in Sources */,
+				2475E2281C2495E07D6D8CA9 /* BoundaryGenerator.swift in Sources */,
+				2475EE92C74A97CAB4C14121 /* MultipartFormData+Builder.swift in Sources */,
+				2475E3509B820ACA79023A1C /* MultipartFormData+Part.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
