@@ -70,6 +70,12 @@ extension MultipartFormData {
         public struct BuildResult {
             public let contentType: String
             public let body: Data
+
+
+            public init(contentType: String, body: Data) {
+                self.contentType = contentType
+                self.body = body
+            }
         }
     }
 }

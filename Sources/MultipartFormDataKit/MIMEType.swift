@@ -1,6 +1,10 @@
 public struct MIMEType {
     public var text: String
 
+    public init(text: String) {
+        self.text = text
+    }
+
     public static var multipartFormData = MIMEType(text: "multipart/form-data")
 
     public static var textPlain = MIMEType(text: "text/plain")

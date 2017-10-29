@@ -1,5 +1,5 @@
 import XCTest
-@testable import MultipartFormDataKit
+import MultipartFormDataKit
 
 
 class ContentDispositionTests: XCTestCase {
