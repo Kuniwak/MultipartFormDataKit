@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "62D729C41FA5BDB500CD0897"
-               BuildableName = "MultipartFormData.framework"
-               BlueprintName = "MultipartFormData-iOS"
-               ReferencedContainer = "container:MultipartFormData.xcodeproj">
+               BlueprintIdentifier = "621346B71FA60D0800DD098E"
+               BuildableName = "MultipartFormDataKit_tvOS.framework"
+               BlueprintName = "MultipartFormDataKit-tvOS"
+               ReferencedContainer = "container:MultipartFormDataKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,26 +29,7 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "62D729CC1FA5BDB500CD0897"
-               BuildableName = "MultipartFormData-iOSTests.xctest"
-               BlueprintName = "MultipartFormData-iOSTests"
-               ReferencedContainer = "container:MultipartFormData.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "62D729C41FA5BDB500CD0897"
-            BuildableName = "MultipartFormData.framework"
-            BlueprintName = "MultipartFormData-iOS"
-            ReferencedContainer = "container:MultipartFormData.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -66,10 +47,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "62D729C41FA5BDB500CD0897"
-            BuildableName = "MultipartFormData.framework"
-            BlueprintName = "MultipartFormData-iOS"
-            ReferencedContainer = "container:MultipartFormData.xcodeproj">
+            BlueprintIdentifier = "621346B71FA60D0800DD098E"
+            BuildableName = "MultipartFormDataKit_tvOS.framework"
+            BlueprintName = "MultipartFormDataKit-tvOS"
+            ReferencedContainer = "container:MultipartFormDataKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -84,10 +65,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "62D729C41FA5BDB500CD0897"
-            BuildableName = "MultipartFormData.framework"
-            BlueprintName = "MultipartFormData-iOS"
-            ReferencedContainer = "container:MultipartFormData.xcodeproj">
+            BlueprintIdentifier = "621346B71FA60D0800DD098E"
+            BuildableName = "MultipartFormDataKit_tvOS.framework"
+            BlueprintName = "MultipartFormDataKit-tvOS"
+            ReferencedContainer = "container:MultipartFormDataKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

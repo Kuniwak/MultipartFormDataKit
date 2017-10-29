@@ -1,12 +1,12 @@
 import XCTest
-@testable import MultipartFormData
+@testable import MultipartFormDataKit
 
 
 
-class NameTests: XCTestCase {
+class FilenameTests: XCTestCase {
     private struct TestCase {
         let filename: String
-        let expected: Name
+        let expected: Filename
     }
 
 
@@ -14,17 +14,21 @@ class NameTests: XCTestCase {
         let testCases: [UInt: TestCase] = [
             #line: TestCase(
                 filename: "abc123ABC",
-                expected: Name(asPercentEncoded: "abc123ABC")
+                expected: Filename(asPercentEncoded: "abc123ABC")
+            ),
+            #line: TestCase(
+                filename: "example.jpg",
+                expected: Filename(asPercentEncoded: "example.jpg")
             ),
             #line: TestCase(
                 filename: "=;\"",
-                expected: Name(asPercentEncoded: "=%3B%22")
+                expected: Filename(asPercentEncoded: "=%3B%22")
             ),
         ]
 
 
         testCases.forEach { (line, testCase) in
-            let actual = Name.create(by: testCase.filename)
+            let actual = Filename.create(by: testCase.filename)
             let expected = testCase.expected
 
             XCTAssertEqual(actual.content?.percentEncodedString, expected.percentEncodedString)
@@ -32,7 +36,7 @@ class NameTests: XCTestCase {
     }
 
 
-    static var allTests: [(String, (NameTests) -> () throws -> Void)] {
+    static var allTests: [(String, (FilenameTests) -> () throws -> Void)] {
         return [
             ("testInit", self.testInit)
         ]

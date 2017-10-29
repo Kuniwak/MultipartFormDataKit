@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "62D729E01FA5BDD900CD0897"
-               BuildableName = "MultipartFormData.framework"
-               BlueprintName = "MultipartFormData-watchOS"
-               ReferencedContainer = "container:MultipartFormData.xcodeproj">
+               BlueprintIdentifier = "6213469D1FA60C4500DD098E"
+               BuildableName = "MultipartFormDataKit_iOS.framework"
+               BlueprintName = "MultipartFormDataKit-iOS"
+               ReferencedContainer = "container:MultipartFormDataKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -30,6 +30,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6213469D1FA60C4500DD098E"
+            BuildableName = "MultipartFormDataKit_iOS.framework"
+            BlueprintName = "MultipartFormDataKit-iOS"
+            ReferencedContainer = "container:MultipartFormDataKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -47,10 +56,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "62D729E01FA5BDD900CD0897"
-            BuildableName = "MultipartFormData.framework"
-            BlueprintName = "MultipartFormData-watchOS"
-            ReferencedContainer = "container:MultipartFormData.xcodeproj">
+            BlueprintIdentifier = "6213469D1FA60C4500DD098E"
+            BuildableName = "MultipartFormDataKit_iOS.framework"
+            BlueprintName = "MultipartFormDataKit-iOS"
+            ReferencedContainer = "container:MultipartFormDataKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,10 +74,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "62D729E01FA5BDD900CD0897"
-            BuildableName = "MultipartFormData.framework"
-            BlueprintName = "MultipartFormData-watchOS"
-            ReferencedContainer = "container:MultipartFormData.xcodeproj">
+            BlueprintIdentifier = "6213469D1FA60C4500DD098E"
+            BuildableName = "MultipartFormDataKit_iOS.framework"
+            BlueprintName = "MultipartFormDataKit-iOS"
+            ReferencedContainer = "container:MultipartFormDataKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

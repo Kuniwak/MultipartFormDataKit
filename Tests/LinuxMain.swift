@@ -1,5 +1,5 @@
 import XCTest
-@testable import MultipartFormDataTests
+@testable import MultipartFormDataKitTests
 
 XCTMain([
     testCase(MultipartFormDataTests.allTests),

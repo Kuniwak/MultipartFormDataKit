@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "62D729ED1FA5BDF800CD0897"
-               BuildableName = "MultipartFormData.framework"
-               BlueprintName = "MultipartFormData-tvOS"
-               ReferencedContainer = "container:MultipartFormData.xcodeproj">
+               BlueprintIdentifier = "621346AA1FA60CCB00DD098E"
+               BuildableName = "MultipartFormDataKit_watchOS.framework"
+               BlueprintName = "MultipartFormDataKit-watchOS"
+               ReferencedContainer = "container:MultipartFormDataKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,10 +47,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "62D729ED1FA5BDF800CD0897"
-            BuildableName = "MultipartFormData.framework"
-            BlueprintName = "MultipartFormData-tvOS"
-            ReferencedContainer = "container:MultipartFormData.xcodeproj">
+            BlueprintIdentifier = "621346AA1FA60CCB00DD098E"
+            BuildableName = "MultipartFormDataKit_watchOS.framework"
+            BlueprintName = "MultipartFormDataKit-watchOS"
+            ReferencedContainer = "container:MultipartFormDataKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,10 +65,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "62D729ED1FA5BDF800CD0897"
-            BuildableName = "MultipartFormData.framework"
-            BlueprintName = "MultipartFormData-tvOS"
-            ReferencedContainer = "container:MultipartFormData.xcodeproj">
+            BlueprintIdentifier = "621346AA1FA60CCB00DD098E"
+            BuildableName = "MultipartFormDataKit_watchOS.framework"
+            BlueprintName = "MultipartFormDataKit-watchOS"
+            ReferencedContainer = "container:MultipartFormDataKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

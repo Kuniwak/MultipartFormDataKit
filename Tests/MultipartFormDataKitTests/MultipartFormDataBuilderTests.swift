@@ -1,5 +1,5 @@
 import XCTest
-import MultipartFormData
+import MultipartFormDataKit
 
 
 class MultipartFormDataBuilderTests: XCTestCase {
