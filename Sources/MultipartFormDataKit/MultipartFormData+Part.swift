@@ -9,6 +9,17 @@ extension MultipartFormData {
         public let content: Data
 
 
+        public init(
+            contentDisposition: ContentDisposition,
+            contentType: ContentType?,
+            content: Data
+        ) {
+            self.contentDisposition = contentDisposition
+            self.contentType = contentType
+            self.content = content
+        }
+
+
         // RFC 2046 Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types
         // 5.1.1.  Common Syntax
         //

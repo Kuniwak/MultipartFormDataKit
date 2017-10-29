@@ -7,7 +7,7 @@ import Foundation
 public struct ContentDisposition {
     // Each part MUST contain a Content-Disposition header field [RFC2183]
     // where the disposition type is "form-data".
-    var value: String {
+    public var value: String {
         return "form-data"
     }
 
@@ -21,7 +21,7 @@ public struct ContentDisposition {
     //
     //     Content-Disposition: form-data; name="user"
     //
-    var name: Name
+    public var name: Name
 
     // For form data that represents the content of a file, a name for the
     // file SHOULD be supplied as well, by using a "filename" parameter of
@@ -30,10 +30,16 @@ public struct ContentDisposition {
     // private; this might result, for example, when selection or drag-and-
     // drop is used or when the form data content is streamed directly from
     // a device.
-    var filename: Filename?
+    public var filename: Filename?
 
 
-    func asHeader() -> Header {
+    public init(name: Name, filename: Filename?) {
+        self.name = name
+        self.filename = filename
+    }
+
+
+    public func asHeader() -> Header {
         var parameters: [Parameter] = [
             Parameter(
                 attribute: "name",
@@ -52,7 +58,7 @@ public struct ContentDisposition {
     }
 
 
-    func asData() -> ValidationResult<Data, DataTransformError> {
+    public func asData() -> ValidationResult<Data, DataTransformError> {
         let headerText = self.asHeader().text
         guard let data = headerText.data(using: .utf8) else {
             return .invalid(because: .cannotEncodeAsUTF8(debugInfo: headerText))
@@ -64,23 +70,23 @@ public struct ContentDisposition {
 
 
     public struct Header /* : CustomStringConvertible */  {
-        var name: String {
+        public var name: String {
             return "Content-Disposition"
         }
-        let value: String
+        public let value: String
 
 
-        var text: String {
+        public var text: String {
             return "\(self.name): \(self.value)"
         }
 
 
-        init(representing value: String) {
+        public init(representing value: String) {
             self.value = value
         }
 
 
-        static func from(value: String, parameters: [Parameter]) -> Header {
+        public static func from(value: String, parameters: [Parameter]) -> Header {
             let parametersPart = parameters
                 .map { "; \($0.text)" }
                 .joined(separator: "")
@@ -92,11 +98,11 @@ public struct ContentDisposition {
 
 
     public struct Parameter /* : CustomStringConvertible */ {
-        let attribute: String
-        let value: String
+        public let attribute: String
+        public let value: String
 
 
-        var text: String {
+        public var text: String {
             return "\(self.attribute)=\"\(self.value)\""
         }
     }

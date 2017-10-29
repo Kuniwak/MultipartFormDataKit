@@ -13,7 +13,7 @@ public struct ContentType {
     public var parameters: [Parameter]
 
 
-    init(representing value: MIMEType, with parameters: [Parameter] = []) {
+    public init(representing value: MIMEType, with parameters: [Parameter] = []) {
         self.value = value
         self.parameters = parameters
     }

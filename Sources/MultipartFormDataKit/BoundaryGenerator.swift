@@ -25,6 +25,9 @@ public class ConstantBoundaryGenerator: BoundaryGenerator {
 
 
 public class RandomBoundaryGenerator: BoundaryGenerator {
+    public init() {}
+
+
     public func generate() -> String {
         return String(format: "%08x%08x", arc4random(), arc4random())
     }

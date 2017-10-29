@@ -45,6 +45,15 @@ public struct MultipartFormData {
     public static let maxLengthOfBoundary = 70
 
 
+    public init(
+        uniqueAndValidLengthBoundary: String,
+        body: [Part]
+    ) {
+        self.uniqueAndValidLengthBoundary = uniqueAndValidLengthBoundary
+        self.body = body
+    }
+
+
     public func asData() -> ValidationResult<Data, DataTransformError> {
         var data = Data()
         guard let boundaryData = self.uniqueAndValidLengthBoundary.data(using: .utf8) else {
