@@ -3,7 +3,7 @@ MultipartFormDataKit
 
 ![Swift 4 compatible](https://img.shields.io/badge/Swift%20version-4-green.svg)
 ![Swift Package Manager and Carthage and CocoaPods compatible](https://img.shields.io/badge/SPM%20%7C%20Carthage%20%7C%20CocoaPods-compatible-green.svg)
-[![v1.0.0](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/Kuniwak/MultipartFormData/releases)
+[![v1.0.1](https://img.shields.io/badge/version-1.0.1-blue.svg)](https://github.com/Kuniwak/MultipartFormData/releases)
 [![Build Status](https://www.bitrise.io/app/8c05b2758bfbf0d8/status.svg?token=vqY7qlmU6qeCPZ17EX7vRA&branch=master)](https://www.bitrise.io/app/8c05b2758bfbf0d8)
 
 
