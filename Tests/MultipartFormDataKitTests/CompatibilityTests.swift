@@ -18,92 +18,74 @@ class CompatibilityTests: XCTestCase {
     let serverURLString = "http://localhost:8080/echo"
 
 
-    func testEmpty() {
+    func testEmpty() throws {
         guard !self.skip else { return }
 
-        let builder = MultipartFormData.Builder(
-            generatingBoundaryBy: RandomBoundaryGenerator()
+        let multipartFormData = try MultipartFormData.Builder.build(
+            with: [],
+            willSeparateBy: RandomBoundaryGenerator.generate()
         )
+        var request = URLRequest(url: URL(string: self.serverURLString)!)
 
-        switch builder.build(with: []) {
-        case let .valid(multipartFormData):
-            var request = URLRequest(url: URL(string: self.serverURLString)!)
+        request.httpMethod = "POST"
+        request.addValue(multipartFormData.contentType, forHTTPHeaderField: "Content-Type")
+        request.httpBody = multipartFormData.body
 
-            request.httpMethod = "POST"
-            request.addValue(multipartFormData.contentType, forHTTPHeaderField: "Content-Type")
-            request.httpBody = multipartFormData.body
-
-            self.assertSuccessfulResponse(request: request)
-
-        case let .invalid(because: error):
-            print("\(error)")
-        }
+        self.assertSuccessfulResponse(request: request)
     }
 
 
-    func testSingle() {
+    func testSingle() throws {
         guard !self.skip else { return }
 
-        let builder = MultipartFormData.Builder(
-            generatingBoundaryBy: RandomBoundaryGenerator()
+        let multipartFormData = try MultipartFormData.Builder.build(
+            with: [
+                (
+                    name: "example",
+                    filename: "example.txt",
+                    mimeType: MIMEType.textPlain,
+                    data: "EXAMPLE_TXT".data(using: .utf8)!
+                ),
+            ],
+            willSeparateBy: RandomBoundaryGenerator.generate()
         )
+        var request = URLRequest(url: URL(string: self.serverURLString)!)
 
-        switch builder.build(with: [
-            (
-                name: "example",
-                filename: "example.txt",
-                mimeType: MIMEType.textPlain,
-                data: "EXAMPLE_TXT".data(using: .utf8)!
-            ),
-        ]) {
-        case let .valid(multipartFormData):
-            var request = URLRequest(url: URL(string: self.serverURLString)!)
+        request.httpMethod = "POST"
+        request.addValue(multipartFormData.contentType, forHTTPHeaderField: "Content-Type")
+        request.httpBody = multipartFormData.body
 
-            request.httpMethod = "POST"
-            request.addValue(multipartFormData.contentType, forHTTPHeaderField: "Content-Type")
-            request.httpBody = multipartFormData.body
-
-            self.assertSuccessfulResponse(request: request)
-
-        case let .invalid(because: error):
-            print("\(error)")
-        }
+        self.assertSuccessfulResponse(request: request)
     }
 
 
-    func testDouble() {
+    func testDouble() throws {
         guard !self.skip else { return }
 
-        let builder = MultipartFormData.Builder(
-            generatingBoundaryBy: RandomBoundaryGenerator()
+        let multipartFormData = try MultipartFormData.Builder.build(
+            with: [
+                (
+                    name: "text",
+                    filename: nil,
+                    mimeType: nil,
+                    data: "EXAMPLE_TXT".data(using: .utf8)!
+                ),
+                (
+                    name: "example",
+                    filename: "example.txt",
+                    mimeType: MIMEType.textPlain,
+                    data: "EXAMPLE_TXT".data(using: .utf8)!
+                ),
+            ],
+            willSeparateBy: RandomBoundaryGenerator.generate()
         )
+        var request = URLRequest(url: URL(string: self.serverURLString)!)
 
-        switch builder.build(with: [
-            (
-                name: "text",
-                filename: nil,
-                mimeType: nil,
-                data: "EXAMPLE_TXT".data(using: .utf8)!
-            ),
-            (
-                name: "example",
-                filename: "example.txt",
-                mimeType: MIMEType.textPlain,
-                data: "EXAMPLE_TXT".data(using: .utf8)!
-            ),
-        ]) {
-        case let .valid(multipartFormData):
-            var request = URLRequest(url: URL(string: self.serverURLString)!)
+        request.httpMethod = "POST"
+        request.addValue(multipartFormData.contentType, forHTTPHeaderField: "Content-Type")
+        request.httpBody = multipartFormData.body
 
-            request.httpMethod = "POST"
-            request.addValue(multipartFormData.contentType, forHTTPHeaderField: "Content-Type")
-            request.httpBody = multipartFormData.body
-
-            self.assertSuccessfulResponse(request: request)
-
-        case let .invalid(because: error):
-            print("\(error)")
-        }
+        self.assertSuccessfulResponse(request: request)
     }
 
 

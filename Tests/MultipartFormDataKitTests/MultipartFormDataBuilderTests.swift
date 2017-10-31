@@ -3,25 +3,24 @@ import MultipartFormDataKit
 
 
 class MultipartFormDataBuilderTests: XCTestCase {
-    func testBuild() {
-        let builder = MultipartFormData.Builder(
-            generatingBoundaryBy: ConstantBoundaryGenerator(willReturn: "boundary")
+    func testBuild() throws {
+        let multipartFormData = try MultipartFormData.Builder.build(
+            with: [
+                (
+                    name: "example1",
+                    filename: nil,
+                    mimeType: nil,
+                    data: "Hello, World!".data(using: .utf8)!
+                ),
+                (
+                    name: "example2",
+                    filename: "example.txt",
+                    mimeType: MIMEType.textPlain,
+                    data: "EXAMPLE_TXT".data(using: .utf8)!
+                ),
+            ],
+            willSeparateBy: "boundary"
         )
-
-        let result = builder.build(with: [
-            (
-                name: "example1",
-                filename: nil,
-                mimeType: nil,
-                data: "Hello, World!".data(using: .utf8)!
-            ),
-            (
-                name: "example2",
-                filename: "example.txt",
-                mimeType: MIMEType.textPlain,
-                data: "EXAMPLE_TXT".data(using: .utf8)!
-            ),
-        ])
 
         let expected = [
             "--boundary",
@@ -36,21 +35,14 @@ class MultipartFormDataBuilderTests: XCTestCase {
             "--boundary--",
         ].joined(separator: "\r\n") + "\r\n"
 
-
-        switch result {
-        case let .invalid(because: error):
-            XCTFail("\(error)")
-
-        case let .valid(multipartFormData):
-            XCTAssertEqual(
-                multipartFormData.contentType,
-                "multipart/form-data; boundary=\"boundary\""
-            )
-            XCTAssertEqual(
-                String(data: multipartFormData.body, encoding: .utf8)!,
-                expected
-            )
-        }
+        XCTAssertEqual(
+            multipartFormData.contentType,
+            "multipart/form-data; boundary=\"boundary\""
+        )
+        XCTAssertEqual(
+            String(data: multipartFormData.body, encoding: .utf8)!,
+            expected
+        )
     }
 
 

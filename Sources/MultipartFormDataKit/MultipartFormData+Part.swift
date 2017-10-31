@@ -134,7 +134,7 @@ extension MultipartFormData {
 
 
 
-        public enum CreationError {
+        public enum CreationError: Error {
             case invalidName(Name.FailureReason)
             case invalidFilename(Filename.FailureReason)
         }

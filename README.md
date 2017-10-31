@@ -14,10 +14,8 @@ Basic Usage
 -----------
 
 ```swift
-let result = MultipartFormData.Builder(
-        generatingBoundaryBy: RandomBoundaryGenerator()
-    )
-    .build(with: [
+let multipartFormData = try MultipartFormData.Builder.build(
+    with: [
         (
             name: "example1",
             filename: nil,
@@ -30,22 +28,17 @@ let result = MultipartFormData.Builder(
             mimeType: MIMEType.textPlain,
             data: "EXAMPLE_TXT".data(using: .utf8)!
         ),
-    ])
+    ],
+    willSeparateBy: RandomBoundaryGenerator.generate()
+)
 
+var request = URLRequest(url: URL(string: "http://example.com")!)
+request.httpMethod = "POST"
+request.setValue(multipartFormData.contentType, forHTTPHeaderField: "Content-Type")
+request.httpBody = multipartFormData.body
 
-switch result {
-case let .valid(multipartFormData):
-    var requrst = URLRequest(url: URL(string: "http://example.com")!)
-    request.addValue(multipartFormData.contentType, forHTTPHeaderField: "Content-Type")
-    request.httpBody = multipartFormData.body
-
-    let task = URLSession.shared.dataTask(with: request)
-    task.resume()
-
-case let .invalid(because: error):
-    print(error)
-    return
-}
+let task = URLSession.shared.dataTask(with: request)
+task.resume()
 ```
 
 
@@ -59,7 +52,7 @@ let multipartFormData = MultipartFormData(
     body: [
         MultipartFormData.Part(
             contentDisposition: ContentDisposition(
-                name: Name(asPercentEncoded: "field1"),
+                name: Name(asPercentEncoded: "field%201"),
                 filename: nil
             ),
             contentType: nil,
@@ -67,7 +60,7 @@ let multipartFormData = MultipartFormData(
         ),
         MultipartFormData.Part(
             contentDisposition: ContentDisposition(
-                name: Name(asPercentEncoded: "field2"),
+                name: Name(asPercentEncoded: "field%202"),
                 filename: Filename(asPercentEncoded: "example.txt")
             ),
             contentType: ContentType(representing: .textPlain),

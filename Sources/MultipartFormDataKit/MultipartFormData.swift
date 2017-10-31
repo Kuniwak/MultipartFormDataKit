@@ -79,7 +79,7 @@ public struct MultipartFormData {
 
 
 
-    public enum DataTransformError {
+    public enum DataTransformError: Error {
         case contentDispositionError(ContentDisposition.DataTransformError)
         case contentTypeError(ContentType.DataTransformError)
         case boundaryError(debugInfo: String)

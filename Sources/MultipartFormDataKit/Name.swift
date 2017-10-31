@@ -20,7 +20,7 @@ public struct Name {
     }
 
 
-    public enum FailureReason {
+    public enum FailureReason: Error {
         case cannotPercentEncode(debugInfo: String)
     }
 }
