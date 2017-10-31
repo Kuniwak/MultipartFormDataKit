@@ -109,7 +109,7 @@ public struct ContentDisposition {
 
 
 
-    public enum DataTransformError {
+    public enum DataTransformError: Error {
         case cannotEncodeAsUTF8(debugInfo: String)
     }
 }

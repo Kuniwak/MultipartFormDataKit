@@ -3,38 +3,47 @@ import Foundation
 
 
 extension MultipartFormData {
-    public class Builder {
-        public typealias Part = (
-            name: String,
-            filename: String?,
-            mimeType: MIMEType?,
-            data: Data
-        )
-
-        private let boundaryGenerator: BoundaryGenerator
+    public typealias PartParam = (
+        name: String,
+        filename: String?,
+        mimeType: MIMEType?,
+        data: Data
+    )
 
 
-        public init(generatingBoundaryBy boundaryGenerator: BoundaryGenerator) {
-            self.boundaryGenerator = boundaryGenerator
+
+    public enum Builder {
+        public static func build(
+            with partParams: [PartParam],
+            willSeparateBy uniqueBoundary: String
+        ) throws -> BuildResult {
+            switch TypedBuilder.build(with: partParams, willSeparateBy: uniqueBoundary) {
+            case let .invalid(because: error):
+                throw error
+
+            case let .valid(result):
+                return result
+            }
         }
+    }
 
 
 
-        public func build(
-            with parts: [Part]
+    public enum TypedBuilder {
+        public static func build(
+            with partParams: [PartParam],
+            willSeparateBy uniqueBoundary: String
         ) -> ValidationResult<BuildResult, BuildError> {
-            let uniqueBoundary = self.boundaryGenerator.generate()
-
             var validParts = [MultipartFormData.Part]()
-            for part in parts {
+            for partParam in partParams {
                 switch MultipartFormData.Part.create(
-                    name: part.name,
-                    filename: part.filename,
-                    mimeType: part.mimeType,
-                    data: part.data
+                    name: partParam.name,
+                    filename: partParam.filename,
+                    mimeType: partParam.mimeType,
+                    data: partParam.data
                 ) {
-                case let .valid(validPart):
-                    validParts.append(validPart)
+                case let .valid(part):
+                    validParts.append(part)
 
                 case let .invalid(because: reason):
                     return .invalid(because: .partCreationError(reason))
@@ -57,33 +66,36 @@ extension MultipartFormData {
                 return .invalid(because: .dataTransformError(reason))
             }
         }
+    }
 
 
 
-        public enum BuildError {
-            case partCreationError(MultipartFormData.Part.CreationError)
-            case dataTransformError(MultipartFormData.DataTransformError)
-        }
+    public enum BuildError: Error {
+        case partCreationError(MultipartFormData.Part.CreationError)
+        case dataTransformError(MultipartFormData.DataTransformError)
+    }
 
 
 
-        public struct BuildResult {
-            public let contentType: String
-            public let body: Data
+    public struct BuildResult {
+        public let contentType: String
+        public let body: Data
 
 
-            public init(contentType: String, body: Data) {
-                self.contentType = contentType
-                self.body = body
-            }
+        public init(contentType: String, body: Data) {
+            self.contentType = contentType
+            self.body = body
         }
     }
 }
 
 
 
-extension MultipartFormData.Builder.BuildResult: Equatable {
-    public static func ==(lhs: MultipartFormData.Builder.BuildResult, rhs: MultipartFormData.Builder.BuildResult) -> Bool {
+extension MultipartFormData.BuildResult: Equatable {
+    public static func ==(
+        lhs: MultipartFormData.BuildResult,
+        rhs: MultipartFormData.BuildResult
+    ) -> Bool {
         return lhs.contentType == rhs.contentType
             && lhs.body == rhs.body
     }
