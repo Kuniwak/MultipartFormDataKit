@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Kuniwak' => 'orga.chem.job@gmail.com' }
   s.source           = { :git => 'https://github.com/Kuniwak/MultipartFormDataKit.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.source_files = 'Sources/**/*'
   s.frameworks = 'Foundation'
 end
