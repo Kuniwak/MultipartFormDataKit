@@ -37,7 +37,7 @@ class MultipartFormDataBuilderTests: XCTestCase {
 
         XCTAssertEqual(
             multipartFormData.contentType,
-            "multipart/form-data; boundary=\"boundary\""
+            "multipart/form-data; boundary=boundary"
         )
         XCTAssertEqual(
             String(data: multipartFormData.body, encoding: .utf8)!,

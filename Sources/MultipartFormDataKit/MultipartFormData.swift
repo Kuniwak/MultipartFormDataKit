@@ -13,14 +13,8 @@ import Foundation
 // boundary.
 public struct MultipartFormData {
     public var header: ContentType.Header {
-        return .from(
-            mimeType: .multipartFormData,
-            parameters: [
-                ContentType.Parameter(
-                    attribute: "boundary",
-                    value: self.uniqueAndValidLengthBoundary
-                ),
-            ]
+        .init(
+            representing: "\(MIMEType.multipartFormData.text); boundary=\(uniqueAndValidLengthBoundary)"
         )
     }
 
