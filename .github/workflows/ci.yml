@@ -1,0 +1,66 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  swiftpm:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Test
+        run: swift test
+
+  xcodebuild:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Test
+        run: |
+          xcodebuild test \
+            -project MultipartFormDataKit.xcodeproj \
+            -scheme MultipartFormDataKitTests \
+            -destination 'platform=macOS' \
+            CODE_SIGNING_ALLOWED=NO
+      - name: Build for each platform
+        run: |
+          for platform in iOS tvOS watchOS macOS; do
+            case "$platform" in
+              macOS) destination='platform=macOS' ;;
+              *) destination="generic/platform=${platform}" ;;
+            esac
+            xcodebuild build \
+              -project MultipartFormDataKit.xcodeproj \
+              -scheme "MultipartFormDataKit-${platform}" \
+              -destination "$destination" \
+              CODE_SIGNING_ALLOWED=NO
+          done
+
+  compatibility-test-server:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Assets/CompatiilityTests/Server
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: Assets/CompatiilityTests/Server/.node-version
+          cache: npm
+          cache-dependency-path: Assets/CompatiilityTests/Server/package-lock.json
+      - name: Install dependencies
+        run: npm ci
+      - name: Audit dependencies
+        run: npm audit
+      - name: Check the server accepts multipart/form-data
+        run: |
+          PORT=8080 node index.js &
+          for _ in $(seq 30); do
+            curl -s http://localhost:8080 >/dev/null && break
+            sleep 1
+          done
+          printf 'hello' > /tmp/example.txt
+          curl --fail -s -F foo=bar -F example=@/tmp/example.txt http://localhost:8080/echo
